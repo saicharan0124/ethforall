@@ -11,6 +11,9 @@
     "mern",
     "chat-app"
   ],
+  "engines": {
+    "node":"14.x"
+  },
   "author": "Piyush Agarwal",
   "license": "ISC",
   "dependencies": {
