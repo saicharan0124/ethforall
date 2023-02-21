@@ -11,12 +11,9 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
-
-  next();
-});
+app.use(cors({
+    origin: '*'
+}));
 
 app.use(express.json()); // to accept json data
 
