@@ -10,6 +10,7 @@ const chatModel = mongoose.Schema(
       ref: "Message",
     },
     groupAdmin: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+    grp_multisig_address: { type: String, trim: true },
   },
   { timestamps: true }
 );
